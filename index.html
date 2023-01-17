@@ -5,11 +5,91 @@
             Frontend Mentor Challange 1
         </title>
         <link rel="stylesheet" href="./CSS/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <h1>This is heading</h1>
-        <p>This is Paragraph</p>
+        <div class="main_container">
+            <div class="left_side_container">
+                <div class="card_front_image_div">
+                    <img src="./images/favicon-32x32.png" alt="car icon logo" class="card_logo_image">
+                    <P class="card_nummber">0000 0000 0000 0000</P>
+                    <p ><span class="card_holder_username">Ahsan Asghar </span><span class="insert_date">14/2022</span></p>
+
+
+                </div>
+                <div class="card_back_image">
+                    <P class="card_back_nummber">0000</P>
+
+
+                </div>
+
+    
+            </div>
+            <div class="right_side_container">
+                <div class="form_div">
+    
+                    <form action="#" class="car_details_input_form">
+                        <div class="form-control">
+                            <label for="Car_holder_name"><span class="card_holder_name_text">Card Holder Name</span></label><br/>
+                            <input type="text" id="card_holder_name" name="car_holder_name">
+                            <small class="input_validation_error_msg">The error msg</small>
+                        </div>
+                      
+                        <div class="form-control">
+                            <label for="card_holder_number_text"><span class="card_holder_number_text">Card Number</span> </label><br/>
+                            <input type="text"  id="card_holder_number_text" name="card_holder_number_text">
+                            <small class="input_validation_error_msg">The error msg</small>
+
+
+                        </div>
+                        <div>
+                            <div class="exp-month">
+                                <div class="form-control">
+                                    <label for="Exp_date_mm"><span>Exp. Date</span></label><br/>
+                                    <input type="number"  id="Exp_date_mm" name="Exp_date_mm">
+                            <small class="input_validation_error_msg">Invalid</small>
+
+
+                                </div>
+                            </div>
+                            <div class="exp-year">
+
+                                <div class="form-control">
+                                    <label for="mm_YY"><span>(MM/YY)</span></label><br/>  
+                                    <input type="number"  id="Exp_date_YY" name="Exp_date_YY">
+                                    <small class="input_validation_error_msg">Invalid</small>
+
+                                </div>
+
+                            </div>
+                                
+                            <div class="cvc_number_container">
+                                <div class="form-control">
+                                    <label for="CVC"><span>CVC</span></label><br/> 
+                                    <input type="number"  id="CVC_number" name="CVC_number">
+                                    <small class="input_validation_error_msg">Invalid</small>
+                                    
+                                </div>                               
+                            </div>
+                            <div>
+                                <button class="confirm_btn" id="confirm_btn" type="submit">Confirm</button>
+                                <!-- <input type="submit" name="" value="Submit" class="confirm_btn"></input> -->
+
+                            </div>
+                           
+
+
+                        </div>
+                      
+                    </form>
+               </div>
+            </div>
+        </div>
+       
         <script src="./JS/index.js"></script>
+        <script src="https://kit.fontawesome.com/24b29db619.js" crossorigin="anonymous"></script>
     </body>
 </html>
